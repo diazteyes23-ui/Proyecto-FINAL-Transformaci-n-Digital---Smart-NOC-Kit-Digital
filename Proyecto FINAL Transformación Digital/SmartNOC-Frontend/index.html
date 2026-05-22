@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Smart NOC 2026 – Propuesta de Digitalización</title>
+<link rel="stylesheet" href="css/style.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet"/>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-brand">⬡ Smart NOC · Kit Digital</div>
+  <ul class="nav-links">
+    <li><a href="#hero">Inicio</a></li>
+    <li><a href="#kitdigital">Kit Digital</a></li>
+    <li><a href="#auditoria">Auditoría</a></li>
+    <li><a href="#vision">Solución</a></li>
+    <li><a href="#arquitectura">Arquitectura</a></li>
+    <li><a href="#valor">Valor</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#implementacion">Implementación</a></li>
+    <li><a href="#dashboard" id="nav-dashboard" style="color:var(--accent3);font-weight:700">&#128209; Dashboard Live</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <span class="badge">Kit Digital · Proyecto de Transformación Digital · España 2026</span>
+    <h1>Digitalización del<br/><span class="gradient-text">Centro de Operaciones de Red</span></h1>
+    <p class="hero-sub">Proyecto de transformación digital acogido al programa <strong>Kit Digital (Acelera Pyme)</strong>. Solución tecnológica real que convierte un NOC tradicional en un <strong>Smart NOC</strong> automatizado con AIOps, API REST y gestión de campo digital.</p>
+    <div class="hero-stats">
+      <div class="stat"><span class="stat-num">Kit</span><span class="stat-label">Digital UE</span></div>
+      <div class="stat"><span class="stat-num">-60%</span><span class="stat-label">Mejora MTTR</span></div>
+      <div class="stat"><span class="stat-num">Java</span><span class="stat-label">Spring Boot MVC</span></div>
+      <div class="stat"><span class="stat-num">L4</span><span class="stat-label">Autonomía objetivo</span></div>
+    </div>
+    <a href="#kitdigital" class="btn-primary">Ver Propuesta Completa ↓</a>
+  </div>
+  <div class="hero-visual">
+    <div class="noc-diagram">
+      <div class="noc-ring ring1"></div>
+      <div class="noc-ring ring2"></div>
+      <div class="noc-ring ring3"></div>
+      <div class="noc-center">NOC<br/>Smart</div>
+      <div class="noc-node n1">5G</div>
+      <div class="noc-node n2">FTTH</div>
+      <div class="noc-node n3">AIOps</div>
+      <div class="noc-node n4">FSM</div>
+      <div class="noc-node n5">ML</div>
+      <div class="noc-node n6">API</div>
+    </div>
+  </div>
+</section>
+
+<!-- SECCIÓN KIT DIGITAL -->
+<section id="kitdigital" class="section dark-section">
+  <div class="section-header">
+    <span class="section-tag">Fase 1 · Fase 2</span>
+    <h2>Análisis del Kit Digital</h2>
+    <p>Programa de digitalización de pymes con fondos europeos Next Generation EU</p>
+  </div>
+  <div class="cards-grid" style="margin-bottom:3rem">
+    <div class="card">
+      <div class="card-icon">🇪🇺</div>
+      <h3>¿Qué es el Kit Digital?</h3>
+      <p>Iniciativa del Gobierno de España gestionada por <strong>Red.es</strong> dentro del Plan de Recuperación, Transformación y Resiliencia. Financia con fondos <strong>Next Generation EU</strong> la adopción de soluciones digitales por parte de pymes y autónomos españoles.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🎯</div>
+      <h3>Objetivo del Programa</h3>
+      <p>Mejorar el nivel de madurez digital de las pequeñas y medianas empresas españolas mediante subvenciones de hasta <strong>12.000 €</strong> (segmento I, 10-49 empleados), canalizadas a través de <strong>Agentes Digitalizadores</strong> homologados por Red.es.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">📋</div>
+      <h3>Categorías de Soluciones</h3>
+      <p>El programa cubre: <strong>Sitio Web y Presencia Online</strong>, eCommerce, Gestión de Redes Sociales, <strong>CRM</strong>, <strong>BI y Analítica</strong>, Gestión de Procesos, Factura Electrónica, <strong>Ciberseguridad</strong>, Comunicaciones Seguras y Puesto de Trabajo Seguro.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🏢</div>
+      <h3>Rol del Agente Digitalizador</h3>
+      <p>Empresa TIC que <strong>se adhiere al programa Red.es</strong>, ofrece soluciones homologadas en el catálogo oficial, firma el <em>Acuerdo de Prestación de Soluciones</em> con el beneficiario, implanta la solución y <strong>justifica documentalmente</strong> la ejecución ante la Sede Electrónica de Red.es.</p>
+    </div>
+  </div>
+
+  <div class="section-header" style="margin-top:2rem;margin-bottom:2rem">
+    <span class="section-tag">Pliego</span>
+    <h2 style="font-size:1.6rem">Requisitos del Agente Digitalizador</h2>
+    <p>Análisis del pliego oficial – Convocatoria C005/23</p>
+  </div>
+  <div class="cards-grid">
+    <div class="card">
+      <div class="card-icon">📄</div>
+      <h3>Documentación Obligatoria</h3>
+      <ul style="padding-left:1.2rem;color:var(--muted);font-size:0.875rem">
+        <li>Alta en el censo de empresarios (AEAT)</li>
+        <li>No estar en situación de crisis (conforme Reglamento UE 651/2014)</li>
+        <li>Cumplir con la Ley 19/2013 de Transparencia</li>
+        <li>Certificado de estar al corriente con SS y AEAT</li>
+        <li>Declaración responsable de ausencia de conflicto de interés</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-icon">✅</div>
+      <h3>Requisitos Técnicos del Pliego</h3>
+      <ul style="padding-left:1.2rem;color:var(--muted);font-size:0.875rem">
+        <li>Solución <strong>cloud o on-premise</strong> con SLA documentado</li>
+        <li>Soporte técnico mínimo 12 meses post-implantación</li>
+        <li>Formación básica al usuario final incluida</li>
+        <li>Cumplimiento RGPD y ENS en el tratamiento de datos</li>
+        <li>Facturación electrónica compatible con TicketBAI / Verifactu</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-icon">⏱️</div>
+      <h3>Plazos y Justificación</h3>
+      <ul style="padding-left:1.2rem;color:var(--muted);font-size:0.875rem">
+        <li>Plazo de ejecución: <strong>máximo 12 meses</strong> desde firma del acuerdo</li>
+        <li>Justificación en Sede Electrónica Red.es con memoria técnica</li>
+        <li>Hitos de facturación: 70% al inicio, 30% tras validación</li>
+        <li>Verificación del servicio por parte de Red.es antes del pago final</li>
+        <li>Conservación documentación 5 años para control de fondos UE</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-icon">🔗</div>
+      <h3>Fuentes Oficiales Consultadas</h3>
+      <ul style="padding-left:1.2rem;font-size:0.875rem">
+        <li><a href="https://www.acelerapyme.gob.es" target="_blank" style="color:var(--accent)">acelerapyme.gob.es</a> – Portal principal</li>
+        <li><a href="https://www.red.es" target="_blank" style="color:var(--accent)">red.es</a> – Entidad gestora</li>
+        <li><a href="https://sede.red.gob.es" target="_blank" style="color:var(--accent)">sede.red.gob.es</a> – Adhesión y requisitos</li>
+        <li>BOE núm. 123 – Bases reguladoras Kit Digital</li>
+        <li>Reglamento (UE) 2021/241 – Mecanismo Recuperación</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- SECCIÓN AUDITORÍA DIGITAL -->
+<section id="auditoria" class="section">
+  <div class="section-header">
+    <span class="section-tag">Fase 3</span>
+    <h2>Auditoría Digital</h2>
+    <p>Diagnóstico de la empresa cliente: NOC Telecom S.L. – Zaragoza</p>
+  </div>
+
+  <div class="cards-grid" style="margin-bottom:3rem">
+    <div class="card">
+      <div class="card-icon">🏭</div>
+      <h3>Análisis de la Empresa</h3>
+      <ul style="padding-left:1.2rem;color:var(--muted);font-size:0.875rem">
+        <li><strong>Nombre:</strong> NOC Telecom S.L.</li>
+        <li><strong>Sector:</strong> Telecomunicaciones – Operadora regional FTTH/5G</li>
+        <li><strong>Tamaño:</strong> 38 empleados (Segmento I – elegible Kit Digital)</li>
+        <li><strong>Facturación:</strong> 4,2 M€/año</li>
+        <li><strong>Zona de operaciones:</strong> Aragón (Zaragoza, Huesca, Teruel)</li>
+        <li><strong>Clientes de red:</strong> ~18.000 líneas FTTH activas + 12 sites 5G</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-icon">📊</div>
+      <h3>Nivel de Digitalización Actual</h3>
+      <ul style="padding-left:1.2rem;color:var(--muted);font-size:0.875rem">
+        <li><strong>Nivel DMA:</strong> 2 / 5 (básico-emergente)</li>
+        <li>Gestión de incidencias: hojas de cálculo Excel</li>
+        <li>Comunicación con técnicos: WhatsApp y llamadas</li>
+        <li>Sin sistema de ticketing integrado con red</li>
+        <li>Monitorización: herramientas legacy desconectadas</li>
+        <li>Datos de red: silos sin correlación ni analítica</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-icon">⚠️</div>
+      <h3>Carencias Digitales Detectadas</h3>
+      <ul style="padding-left:1.2rem;color:var(--muted);font-size:0.875rem">
+        <li>❌ Ausencia de sistema de gestión de incidencias (ITSM)</li>
+        <li>❌ Sin digitalización del proceso NOC→campo</li>
+        <li>❌ Sin análisis predictivo de fallos de red</li>
+        <li>❌ Sin API documentada entre sistemas</li>
+        <li>❌ Brechas de seguridad: accesos no auditados a OLTs</li>
+        <li>❌ Sin tratamiento estructurado de datos operacionales</li>
+      </ul>
+    </div>
+    <div class="card">
+      <div class="card-icon">🚀</div>
+      <h3>Oportunidades Identificadas</h3>
+      <ul style="padding-left:1.2rem;color:var(--muted);font-size:0.875rem">
+        <li>✅ MTTR actual 4,2h → objetivo 1,7h con digitalización</li>
+        <li>✅ 30% averías evitables con mantenimiento predictivo</li>
+        <li>✅ Ahorro 880.000 €/año en OPEX estimado</li>
+        <li>✅ Mejora SLA con clientes → fidelización y menos penalizaciones</li>
+        <li>✅ Elegible: categoría <strong>Gestión de Procesos + BI</strong> del Kit Digital</li>
+        <li>✅ Subvención potencial: hasta <strong>6.000 €</strong> (seg. I)</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="fsm-platforms">
+    <h3 style="color:var(--accent);margin-bottom:1rem">📋 Cumplimiento del Kit Digital – Diagnóstico por Categoría</h3>
+    <div class="platform-table">
+      <table>
+        <thead><tr><th>Categoría Kit Digital</th><th>Estado Actual</th><th>Cumple</th><th>Acción Propuesta</th></tr></thead>
+        <tbody>
+          <tr class="highlight-row"><td>Gestión de Procesos (ERP)</td><td>Excel y procesos manuales</td><td>❌ No cumple</td><td>Implantar SmartNOC (este proyecto)</td></tr>
+          <tr><td>BI y Analítica</td><td>Sin datos estructurados</td><td>❌ No cumple</td><td>Dashboard Grafana + KPIs API REST</td></tr>
+          <tr><td>Ciberseguridad</td><td>Accesos no auditados</td><td>❌ No cumple</td><td>ENS + Zero Trust + auditoría accesos</td></tr>
+          <tr><td>Comunicaciones Seguras</td><td>WhatsApp (no cifrado corp.)</td><td>❌ No cumple</td><td>API + PWA con VPN corporativa</td></tr>
+          <tr><td>Presencia Online / Web</td><td>Web básica sin portal cliente</td><td>⚠️ Parcial</td><td>Portal de estado de red para clientes</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="ml-detail" style="margin-top:2rem">
+    <div class="ml-card">
+      <h3>🔐 Análisis de Brechas de Seguridad</h3>
+      <ul>
+        <li><strong>Acceso a OLTs:</strong> Credenciales compartidas sin rotación. Propuesta: PAM (CyberArk/Vault)</li>
+        <li><strong>Tráfico de gestión:</strong> Sin separación OAM. Propuesta: VLAN dedicada + IPSec</li>
+        <li><strong>Datos personales:</strong> Logs con IPs de cliente sin seudonimizar. Acción: RGPD + anonimización</li>
+        <li><strong>APIs:</strong> Sin autenticación en endpoints legacy. Propuesta: OAuth2 + JWT</li>
+      </ul>
+    </div>
+    <div class="ml-card">
+      <h3>📦 Tratamiento de Datos y Analítica</h3>
+      <ul>
+        <li><strong>Datos generados:</strong> ~500 GB/mes de telemetría de red sin explotar</li>
+        <li><strong>Integración:</strong> Pipeline Kafka → InfluxDB → Grafana → API REST</li>
+        <li><strong>Gobernanza:</strong> Data catalog con Apache Atlas. Retención 24 meses.</li>
+        <li><strong>RGPD:</strong> DPA firmado con proveedor cloud. Datos en territorio UE.</li>
+      </ul>
+    </div>
+    <div class="ml-card">
+      <h3>👥 Idoneidad de Recursos Humanos</h3>
+      <ul>
+        <li><strong>Equipo NOC:</strong> 12 operadores → formación en nuevo modelo L3/L4</li>
+        <li><strong>Técnicos campo:</strong> 18 personas → app móvil + AR-assist</li>
+        <li><strong>Plan formación:</strong> 40h/persona en primeros 3 meses</li>
+        <li><strong>Change Management:</strong> Agente de cambio interno + soporte proveedor 12m</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- SECCIÓN 1: VISIÓN ESTRATÉGICA -->
+<section id="vision" class="section">
+  <div class="section-header">
+    <span class="section-tag">01</span>
+    <h2>Visión Estratégica</h2>
+    <p>Modelo de Operaciones Autónomas según TM Forum & ETSI ZSM</p>
+  </div>
+  <div class="autonomy-ladder">
+    <div class="level done"><span class="lvl-num">L1</span><div class="lvl-info"><strong>Asistido</strong><p>Operador ejecuta, sistema informa</p></div><span class="lvl-badge current-state">Estado actual</span></div>
+    <div class="level active"><span class="lvl-num">L2</span><div class="lvl-info"><strong>Parcialmente Autónomo</strong><p>Sistema sugiere, operador aprueba</p></div><span class="lvl-badge phase1">Fase 1 · Q1-Q2</span></div>
+    <div class="level active"><span class="lvl-num">L3</span><div class="lvl-info"><strong>Condicionalmente Autónomo</strong><p>Sistema actúa en dominio conocido, escala excepciones</p></div><span class="lvl-badge phase2">Fase 2 · Q3</span></div>
+    <div class="level target"><span class="lvl-num">L4</span><div class="lvl-info"><strong>Altamente Autónomo</strong><p>Auto-healing, auto-scaling, predicción proactiva</p></div><span class="lvl-badge phase3">Objetivo · Q4 2026</span></div>
+  </div>
+  <div class="cards-grid">
+    <div class="card">
+      <div class="card-icon">🎯</div>
+      <h3>Closed-Loop Automation</h3>
+      <p>Implementación de bucles MAPE-K (Monitor, Analyze, Plan, Execute) sobre la plataforma <strong>Red Hat Ansible Automation Platform</strong> para reconfiguración dinámica de elementos de red FTTH y 5G en menos de 90 segundos.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🧠</div>
+      <h3>Intent-Based Networking</h3>
+      <p>Adopción del estándar <strong>ETSI ZSM (Zero-touch Service Management)</strong> para traducir políticas de negocio en configuraciones de red automáticas, eliminando la traducción manual operador-sistema.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">📡</div>
+      <h3>Digital Twin de Red</h3>
+      <p>Gemelo digital del inventario FTTH/5G sobre <strong>OSS/BSS (Netcracker / Nokia)</strong> sincronizado en tiempo real, habilitando simulación de cambios antes de aplicarlos en producción.</p>
+    </div>
+    <div class="card">
+      <div class="card-icon">🔒</div>
+      <h3>Marco Regulatorio España 2026</h3>
+      <p>Cumplimiento con <strong>ENS (Esquema Nacional de Seguridad)</strong>, directiva NIS2 transpuesta, y regulaciones CNMC para operadoras de red nacional, con auditoría continua integrada.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SECCIÓN 2: ARQUITECTURA -->
+<section id="arquitectura" class="section dark-section">
+  <div class="section-header">
+    <span class="section-tag">02</span>
+    <h2>Arquitectura Tecnológica</h2>
+    <p>Stack AIOps + ML para redes FTTH y 5G</p>
+  </div>
+  <div class="arch-diagram">
+    <div class="arch-layer">
+      <div class="layer-label">Capa de Datos</div>
+      <div class="arch-boxes">
+        <div class="arch-box">Kafka Streams<br/><small>Telemetría tiempo real</small></div>
+        <div class="arch-box">Elasticsearch<br/><small>Log aggregation</small></div>
+        <div class="arch-box">InfluxDB<br/><small>Series temporales KPIs</small></div>
+        <div class="arch-box">MinIO<br/><small>Data Lake alarmas</small></div>
+      </div>
+    </div>
+    <div class="arch-arrow">▼ Ingesta y normalización YANG/NETCONF/gNMI</div>
+    <div class="arch-layer highlight-layer">
+      <div class="layer-label">Capa AIOps</div>
+      <div class="arch-boxes">
+        <div class="arch-box accent">Moogsoft / BigPanda<br/><small>Supresión alarmas</small></div>
+        <div class="arch-box accent">Prophet + LSTM<br/><small>Predicción fallos</small></div>
+        <div class="arch-box accent">Isolation Forest<br/><small>Anomaly detection</small></div>
+        <div class="arch-box accent">MLflow<br/><small>Model lifecycle</small></div>
+      </div>
+    </div>
+    <div class="arch-arrow">▼ Correlación de eventos y scoring de riesgo</div>
+    <div class="arch-layer">
+      <div class="layer-label">Capa de Automatización</div>
+      <div class="arch-boxes">
+        <div class="arch-box">Ansible AWX<br/><small>Runbook automation</small></div>
+        <div class="arch-box">ServiceNow ITSM<br/><small>Ticketing inteligente</small></div>
+        <div class="arch-box">Grafana<br/><small>Observabilidad unificada</small></div>
+        <div class="arch-box">PagerDuty<br/><small>Alerting adaptativo</small></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ml-detail">
+    <div class="ml-card">
+      <h3>🔮 ML Predictivo FTTH</h3>
+      <ul>
+        <li><strong>Modelo:</strong> LSTM Bidireccional (ventana 30 días)</li>
+        <li><strong>Features:</strong> Potencia óptica, BER, temperatura OLT, humedad ductos</li>
+        <li><strong>Output:</strong> Probabilidad de avería en próximas 72h por ONT</li>
+        <li><strong>Precisión objetivo:</strong> &gt;88% recall en fallos críticos</li>
+        <li><strong>Reentrenamiento:</strong> Semanal automatizado con MLflow + Airflow</li>
+      </ul>
+    </div>
+    <div class="ml-card">
+      <h3>📶 ML Predictivo 5G NR</h3>
+      <ul>
+        <li><strong>Modelo:</strong> XGBoost + series temporales (Prophet)</li>
+        <li><strong>Features:</strong> SINR, handover rate, CQI, temperatura RRU, carga PRB</li>
+        <li><strong>Output:</strong> Degradación de celda + ventana temporal de intervención</li>
+        <li><strong>Integración:</strong> 3GPP O-RAN E2 interface hacia RIC (Near-RT)</li>
+        <li><strong>Latencia:</strong> Inferencia &lt;200ms para closed-loop de radio</li>
+      </ul>
+    </div>
+    <div class="ml-card">
+      <h3>🔕 AIOps: Supresión de Alarmas</h3>
+      <ul>
+        <li><strong>Problema:</strong> NOC tradicional recibe 50.000+ alarmas/día</li>
+        <li><strong>Solución:</strong> Motor de correlación topológica + temporal</li>
+        <li><strong>Algoritmo:</strong> Graph Neural Network sobre topología de red</li>
+        <li><strong>Resultado esperado:</strong> Reducción del 85% en alarmas accionables</li>
+        <li><strong>Root Cause:</strong> Identificación automática en &lt;2 minutos</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- SECCIÓN 3: PROCESOS / FSM -->
+<section id="procesos" class="section">
+  <div class="section-header">
+    <span class="section-tag">03</span>
+    <h2>Digitalización de Procesos</h2>
+    <p>Conectividad NOC ↔ Mantenimiento de Campo mediante APIs y FSM</p>
+  </div>
+  <div class="workflow-container">
+    <div class="workflow-step">
+      <div class="ws-num">1</div>
+      <div class="ws-content">
+        <h4>Detección Automatizada</h4>
+        <p>AIOps detecta fallo predictivo. Genera incidencia en <strong>ServiceNow</strong> con severidad, topología afectada y runbook sugerido. SLA clock se inicia automáticamente.</p>
+      </div>
+    </div>
+    <div class="wf-arrow">→</div>
+    <div class="workflow-step">
+      <div class="ws-num">2</div>
+      <div class="ws-content">
+        <h4>Enrutamiento FSM</h4>
+        <p><strong>API REST (OpenAPI 3.1)</strong> publica la orden de trabajo al módulo FSM. Algoritmo de despacho selecciona técnico más próximo con skills requeridos vía geolocalización en tiempo real.</p>
+      </div>
+    </div>
+    <div class="wf-arrow">→</div>
+    <div class="workflow-step">
+      <div class="ws-num">3</div>
+      <div class="ws-content">
+        <h4>Movilidad de Campo</h4>
+        <p>Técnico recibe en <strong>app móvil (PWA offline-first)</strong>: planos de red, historia de averías, checklist guiado, AR-assist para OLT/RRU, y acceso seguro a red OAM vía VPN Zero Trust.</p>
+      </div>
+    </div>
+    <div class="wf-arrow">→</div>
+    <div class="workflow-step">
+      <div class="ws-num">4</div>
+      <div class="ws-content">
+        <h4>Cierre y Aprendizaje</h4>
+        <p>Al resolver: actualización automática del <strong>inventario OSS</strong>, feedback al modelo ML (etiquetado del fallo real), cierre de ticket, y recálculo de KPIs de red en Grafana.</p>
+      </div>
+    </div>
+  </div>
+  <div class="api-spec">
+    <h3>Contrato API NOC → FSM (extracto OpenAPI 3.1)</h3>
+    <pre><code>POST /api/v1/work-orders
+Authorization: Bearer {jwt_token}
+Content-Type: application/json
+
+{
+  "incidentId": "INC-20260512-00847",
+  "priority": "P1",
+  "type": "FTTH_OLT_DEGRADATION",
+  "location": { "lat": 41.6488, "lon": -0.8891, "site": "ZGZ-OLT-042" },
+  "affectedClients": 1240,
+  "slaDeadlineUTC": "2026-05-12T20:15:00Z",
+  "requiredSkills": ["FTTH_L3", "OPGW"],
+  "runbookUrl": "https://noc.internal/runbooks/ftth-olt-degradation"
+}
+
+→ 201 Created: { "workOrderId": "WO-2026-08847", "technicianId": "T-0291",
+                  "eta": "PT45M", "status": "DISPATCHED" }</code></pre>
+  </div>
+  <div class="fsm-platforms">
+    <h3>Plataformas FSM Evaluadas</h3>
+    <div class="platform-table">
+      <table>
+        <thead><tr><th>Plataforma</th><th>Integración NOC</th><th>Offline</th><th>IA Scheduling</th><th>Coste/usuario/mes</th></tr></thead>
+        <tbody>
+          <tr class="highlight-row"><td>ServiceNow FSM</td><td>Nativa + REST</td><td>✅</td><td>✅</td><td>~85 €</td></tr>
+          <tr><td>Salesforce Field Service</td><td>REST/GraphQL</td><td>✅</td><td>✅</td><td>~95 €</td></tr>
+          <tr><td>IFS Field Service</td><td>REST API</td><td>Parcial</td><td>✅</td><td>~70 €</td></tr>
+          <tr><td>ClickSoftware (SAP)</td><td>REST + OData</td><td>✅</td><td>Básica</td><td>~60 €</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- SECCIÓN 4: VALOR ECONÓMICO -->
+<section id="valor" class="section dark-section">
+  <div class="section-header">
+    <span class="section-tag">04</span>
+    <h2>Propuesta de Valor Económica</h2>
+    <p>Impacto cuantificado en OPEX y MTTR</p>
+  </div>
+  <div class="value-grid">
+    <div class="value-card">
+      <div class="value-icon">📉</div>
+      <div class="value-num">-40%</div>
+      <div class="value-title">Reducción OPEX Operacional</div>
+      <div class="value-detail">Automatización de runbooks elimina 3.200 h/año de trabajo manual. Supresión de alarmas reduce personal nocturno de 6 a 3 operadores. Ahorro estimado: <strong>480.000 €/año</strong>.</div>
+    </div>
+    <div class="value-card">
+      <div class="value-icon">⚡</div>
+      <div class="value-num">-60%</div>
+      <div class="value-title">Mejora MTTR</div>
+      <div class="value-detail">MTTR medio pasa de 4,2h a 1,7h. La detección predictiva evita el 30% de averías antes de impacto en cliente. Reducción de penalizaciones SLA: <strong>220.000 €/año</strong>.</div>
+    </div>
+    <div class="value-card">
+      <div class="value-icon">🚗</div>
+      <div class="value-num">-35%</div>
+      <div class="value-title">Desplazamientos de Campo</div>
+      <div class="value-detail">Diagnóstico remoto previo elimina visitas innecesarias. Optimización de rutas FSM reduce km recorridos. Ahorro combustible + tiempo técnico: <strong>180.000 €/año</strong>.</div>
+    </div>
+    <div class="value-card">
+      <div class="value-icon">💰</div>
+      <div class="value-num">24 m</div>
+      <div class="value-title">Período de Retorno (ROI)</div>
+      <div class="value-detail">Inversión total estimada: <strong>1.8M €</strong> (licencias + integración + formación). Ahorro anual total: <strong>880.000 €</strong>. ROI positivo al mes 24 post-implantación completa.</div>
+    </div>
+  </div>
+  <div class="charts-row">
+    <div class="chart-card">
+      <h3>Evolución MTTR (horas) – 12 meses</h3>
+      <canvas id="mttrChart"></canvas>
+    </div>
+    <div class="chart-card">
+      <h3>Reducción Alarmas Accionables</h3>
+      <canvas id="alarmChart"></canvas>
+    </div>
+  </div>
+</section>
+
+<!-- SECCIÓN 5: ROADMAP -->
+<section id="roadmap" class="section">
+  <div class="section-header">
+    <span class="section-tag">05</span>
+    <h2>Hoja de Ruta 2026</h2>
+    <p>Plan de implementación por fases – 12 meses</p>
+  </div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-marker p1">Q1</div>
+      <div class="tl-content">
+        <div class="tl-phase">FASE 1: Cimientos Digitales (Meses 1-3)</div>
+        <ul>
+          <li>Despliegue de plataforma de telemetría: <strong>Kafka + Elasticsearch + InfluxDB</strong> sobre Kubernetes (OKD on-premise).</li>
+          <li>Integración NETCONF/YANG con inventario OLTs y BTS 5G. Extracción de 200+ KPIs por elemento.</li>
+          <li>Implantación de <strong>Grafana Enterprise</strong> con dashboards unificados NOC (reemplaza silos por tecnología).</li>
+          <li>Auditoría ENS y baseline de seguridad Zero Trust (Zscaler / Palo Alto Prisma).</li>
+          <li><strong>Entregable:</strong> Observabilidad unificada FTTH + 5G operativa. Eliminación de herramientas legacy.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-marker p2">Q2</div>
+      <div class="tl-content">
+        <div class="tl-phase">FASE 2: Inteligencia y Automatización Básica (Meses 4-6)</div>
+        <ul>
+          <li>Implantación <strong>Moogsoft AIOps</strong>: correlación de alarmas y reducción de ruido (&gt;70% en semana 8).</li>
+          <li>Primeros modelos ML predictivos FTTH entrenados con histórico 18 meses. Validación en entorno staging.</li>
+          <li>Despliegue <strong>Ansible AWX</strong>: automatización de 15 runbooks más frecuentes (reinicio de tarjetas, cambio de VLAN, failover de enlace).</li>
+          <li>Integración bidireccional <strong>ServiceNow ↔ OSS</strong> vía API REST. Ticketing automático L1.</li>
+          <li><strong>Entregable:</strong> NOC en Nivel L2. Reducción 40% carga operadores L1.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-marker p3">Q3</div>
+      <div class="tl-content">
+        <div class="tl-phase">FASE 3: Field Service Management y Movilidad (Meses 7-9)</div>
+        <ul>
+          <li>Implantación <strong>ServiceNow FSM</strong>: integración completa NOC → despacho campo vía API.</li>
+          <li>Lanzamiento <strong>PWA para técnicos de campo</strong>: órdenes de trabajo, AR-assist, firma digital, inventario de materiales.</li>
+          <li>Modelos ML 5G en producción: predicción de degradación de celdas con alertas proactivas a planificación de red.</li>
+          <li>Piloto <strong>O-RAN Near-RT RIC</strong> en zona geográfica limitada (3 sitios). Closed-loop radio de baja latencia.</li>
+          <li><strong>Entregable:</strong> MTTR reducido un 45%. NOC en Nivel L3.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-marker p4">Q4</div>
+      <div class="tl-content">
+        <div class="tl-phase">FASE 4: Autonomía y Optimización Continua (Meses 10-12)</div>
+        <ul>
+          <li>Activación de <strong>auto-healing full</strong>: el sistema resuelve el 60% de incidencias sin intervención humana.</li>
+          <li>Expansión O-RAN RIC a red completa. Integración con <strong>Digital Twin</strong> para simulación de cambios en red.</li>
+          <li>Implantación cuadro de mando ejecutivo: NPS técnico, disponibilidad red, ahorro OPEX, MTTR en tiempo real.</li>
+          <li>Certificación <strong>ENS Nivel Alto</strong> y auditoría NIS2. Formación 100% plantilla NOC en nuevo modelo operativo.</li>
+          <li><strong>Entregable:</strong> Smart NOC L4 operativo. MTTR -60%. OPEX -40%. ROI en trayectoria objetivo.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="investment-summary">
+    <h3>Resumen de Inversión por Fase</h3>
+    <div class="inv-bars">
+      <div class="inv-row"><span>Q1 – Infraestructura & Observabilidad</span><div class="inv-bar"><div class="inv-fill" style="width:50%">500.000 €</div></div></div>
+      <div class="inv-row"><span>Q2 – AIOps & Automatización</span><div class="inv-bar"><div class="inv-fill" style="width:45%">450.000 €</div></div></div>
+      <div class="inv-row"><span>Q3 – FSM & Movilidad de Campo</span><div class="inv-bar"><div class="inv-fill" style="width:55%">550.000 €</div></div></div>
+      <div class="inv-row"><span>Q4 – Autonomía & Optimización</span><div class="inv-bar"><div class="inv-fill" style="width:30%">300.000 €</div></div></div>
+    </div>
+    <p class="total-inv">Inversión Total: <strong>1.800.000 €</strong> · ROI positivo estimado: <strong>Mes 24</strong></p>
+  </div>
+</section>
+
+<!-- DASHBOARD EN VIVO -->
+<section id="dashboard" class="section">
+  <div class="section-header">
+    <span class="section-tag">Live</span>
+    <h2>Dashboard NOC en Tiempo Real</h2>
+    <p>Datos reales desde MySQL vía API REST Spring Boot &mdash; <code style="color:var(--accent)">localhost:8080</code></p>
+  </div>
+
+  <!-- Estado de conexión API -->
+  <div id="api-status" style="text-align:center;margin-bottom:2rem">
+    <span id="api-badge" style="display:inline-flex;align-items:center;gap:0.5rem;padding:0.4rem 1.2rem;border-radius:50px;border:1px solid var(--border);font-size:0.85rem;background:var(--card)">
+      <span id="api-dot" style="width:10px;height:10px;border-radius:50%;background:#888;display:inline-block"></span>
+      <span id="api-text">Conectando a la API...</span>
+    </span>
+  </div>
+
+  <!-- KPI Cards desde /api/v1/incidencias/kpis -->
+  <div class="cards-grid" style="margin-bottom:2.5rem">
+    <div class="value-card">
+      <div class="value-icon">⏱️</div>
+      <div class="value-num" id="kpi-mttr">--</div>
+      <div class="value-title">MTTR Promedio (minutos)</div>
+      <div class="value-detail">Calculado desde incidencias resueltas en MySQL</div>
+    </div>
+    <div class="value-card">
+      <div class="value-icon">🚨</div>
+      <div class="value-num" id="kpi-activas">--</div>
+      <div class="value-title">Incidencias Activas</div>
+      <div class="value-detail">Estado ABIERTA o EN_PROGRESO en este momento</div>
+    </div>
+    <div class="value-card">
+      <div class="value-icon">👨‍🔧</div>
+      <div class="value-num" id="kpi-tecnicos">--</div>
+      <div class="value-title">Técnicos Disponibles</div>
+      <div class="value-detail">Técnicos de campo listos para despacho</div>
+    </div>
+    <div class="value-card">
+      <div class="value-icon">📋</div>
+      <div class="value-num" id="kpi-total">--</div>
+      <div class="value-title">Total Incidencias</div>
+      <div class="value-detail">Registradas en la base de datos smart_noc</div>
+    </div>
+  </div>
+
+  <!-- Tabla Incidencias -->
+  <div class="fsm-platforms" style="margin-bottom:2.5rem">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem">
+      <h3 style="color:var(--accent)">&#128203; Incidencias &mdash; MySQL smart_noc.incidencias</h3>
+      <button id="btn-reload" onclick="cargarDatos()" style="padding:0.4rem 1rem;border-radius:8px;border:1px solid var(--accent);background:transparent;color:var(--accent);cursor:pointer;font-size:0.8rem">&#8635; Actualizar</button>
+    </div>
+    <div class="platform-table">
+      <table id="tabla-incidencias">
+        <thead><tr><th>Código</th><th>Título</th><th>Severidad</th><th>Estado</th><th>Clientes Afect.</th><th>Fecha apertura</th></tr></thead>
+        <tbody id="body-incidencias"><tr><td colspan="6" style="text-align:center;color:var(--muted)">Cargando...</td></tr></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Tabla Técnicos -->
+  <div class="fsm-platforms" style="margin-bottom:2.5rem">
+    <h3 style="color:var(--accent);margin-bottom:1rem">&#128104;&#8205;&#128295; Técnicos de Campo &mdash; MySQL smart_noc.tecnicos</h3>
+    <div class="platform-table">
+      <table id="tabla-tecnicos">
+        <thead><tr><th>Nombre</th><th>Email</th><th>Skills</th><th>Zona</th><th>Disponible</th></tr></thead>
+        <tbody id="body-tecnicos"><tr><td colspan="5" style="text-align:center;color:var(--muted)">Cargando...</td></tr></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Formulario crear incidencia -->
+  <div class="investment-summary">
+    <h3 style="color:var(--accent);margin-bottom:1.5rem">&#43; Nueva Incidencia &mdash; POST /api/v1/incidencias</h3>
+    <form id="form-incidencia" onsubmit="crearIncidencia(event)">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem">
+        <div>
+          <label style="display:block;font-size:0.8rem;color:var(--muted);margin-bottom:0.4rem">Título *</label>
+          <input id="inc-titulo" type="text" required placeholder="Ej: Degradación OLT Zaragoza"
+            style="width:100%;padding:0.7rem;border-radius:8px;border:1px solid var(--border);background:var(--card2);color:var(--text);font-size:0.875rem"/>
+        </div>
+        <div>
+          <label style="display:block;font-size:0.8rem;color:var(--muted);margin-bottom:0.4rem">Severidad *</label>
+          <select id="inc-severidad" style="width:100%;padding:0.7rem;border-radius:8px;border:1px solid var(--border);background:var(--card2);color:var(--text);font-size:0.875rem">
+            <option value="P1">P1 &mdash; Crítica</option>
+            <option value="P2">P2 &mdash; Alta</option>
+            <option value="P3" selected>P3 &mdash; Media</option>
+            <option value="P4">P4 &mdash; Baja</option>
+          </select>
+        </div>
+        <div>
+          <label style="display:block;font-size:0.8rem;color:var(--muted);margin-bottom:0.4rem">Tipo</label>
+          <input id="inc-tipo" type="text" placeholder="Ej: FTTH_OLT_DEGRADATION"
+            style="width:100%;padding:0.7rem;border-radius:8px;border:1px solid var(--border);background:var(--card2);color:var(--text);font-size:0.875rem"/>
+        </div>
+        <div>
+          <label style="display:block;font-size:0.8rem;color:var(--muted);margin-bottom:0.4rem">Clientes Afectados</label>
+          <input id="inc-clientes" type="number" min="0" value="0"
+            style="width:100%;padding:0.7rem;border-radius:8px;border:1px solid var(--border);background:var(--card2);color:var(--text);font-size:0.875rem"/>
+        </div>
+      </div>
+      <div style="margin-bottom:1rem">
+        <label style="display:block;font-size:0.8rem;color:var(--muted);margin-bottom:0.4rem">Descripción</label>
+        <textarea id="inc-desc" rows="2" placeholder="Descripción detallada del fallo..."
+          style="width:100%;padding:0.7rem;border-radius:8px;border:1px solid var(--border);background:var(--card2);color:var(--text);font-size:0.875rem;resize:vertical"></textarea>
+      </div>
+      <div style="display:flex;gap:1rem;align-items:center">
+        <button type="submit" style="padding:0.7rem 2rem;border-radius:8px;border:none;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;font-weight:700;cursor:pointer;font-size:0.9rem">
+          &#128228; Enviar a API
+        </button>
+        <span id="form-msg" style="font-size:0.85rem"></span>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- SECCIÓN 6: MÓDULOS IMPLEMENTADOS -->
+<section id="implementacion" class="section dark-section">
+  <div class="section-header">
+    <span class="section-tag">Backend</span>
+    <h2>Módulos Técnicos Implementados</h2>
+    <p>Evidencias de la arquitectura funcional construida</p>
+  </div>
+  <div class="cards-grid">
+    <div class="card">
+      <div class="card-icon">🔐</div>
+      <h3>Seguridad Real Implementada</h3>
+      <p>Configuración completa de <strong>Spring Security</strong>. Protección de endpoints mediante <code>Basic Authentication</code> (admin/operator). Configuración de CORS y CSRF para API segura, bloqueando accesos no autorizados a operaciones sensibles (POST/PATCH/DELETE).</p>
+      <div style="margin-top:1rem; font-family:monospace; background:#111; padding:0.5rem; border-radius:4px; font-size:0.8rem; color:#00d4ff;">
+        @EnableWebSecurity<br/>
+        .authorizeHttpRequests(...)<br/>
+        .anyRequest().authenticated()
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-icon">🖧</div>
+      <h3>Gestión Integral de Equipos</h3>
+      <p>Desarrollo full-stack del módulo de red: <code>EquipoController</code> y <code>EquipoService</code> construidos al 100%. Permite CRUD completo de OLTs, BTS, ONUs y correlación directa con la Base de Datos (JPA) para conocer estado y zona.</p>
+      <div style="margin-top:1rem; font-family:monospace; background:#111; padding:0.5rem; border-radius:4px; font-size:0.8rem; color:#00d4ff;">
+        GET /api/v1/equipos<br/>
+        PATCH /api/v1/equipos/{id}/estado
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-icon">🧾</div>
+      <h3>Integración TicketBAI</h3>
+      <p>Sistema de facturación electrónica validado según el <strong>Kit Digital</strong>. Módulo <code>FacturaController</code> listo con generación de firmas criptográficas únicas (TBAI) y códigos QR asociados para la justificación tributaria inmediata.</p>
+      <div style="margin-top:1rem; font-family:monospace; background:#111; padding:0.5rem; border-radius:4px; font-size:0.8rem; color:#00d4ff;">
+        POST /api/v1/facturas/{id}/ticketbai<br/>
+        { "firmaTicketBai": "TBAI-..." }
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>Smart NOC 2026 · Propuesta de Digitalización · Consultoría Estrategia Digital & CTO</p>
+  <p>Marco regulatorio: ENS · NIS2 · CNMC · 3GPP R18 · ETSI ZSM · TM Forum IG1230</p>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>
